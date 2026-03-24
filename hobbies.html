@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hobbies</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .nav-bar {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        padding: 15px 0;
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-bar a {
+        color: #1e8ef7;
+        text-decoration: none;
+        margin-right: 5%;
+        font-weight: bold;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+    .main-container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 40px 0;
+        padding: 40px;
+        background-color: rgba(0, 71, 171, 0.2);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+    .page-title {
+        border-bottom: 2px solid #00d4ff;
+        display: inline-block;
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+    .hobby-card {
+        display: flex;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin-bottom: 25px;
+        overflow: hidden;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .hobby-card:hover {
+        transform: scale(1.02);
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #00d4ff;
+        box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+    }
+    .hobby-pic {
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .hobby-info {
+        padding: 25px;
+        flex: 1;
+    }
+    .hobby-info h3 {
+        margin: 0 0 10px 0;
+        color: #1e8ef7;
+        font-size: 1.4em;
+    }
+    .hobby-info p {
+        color: #ffffff;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        color: #1e8ef7;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html">BACK TO HOME</a>
+        <a href="contact.html">CONTACT PAGE</a>
+    </div>
+
+    <div class="main-container">
+        <h2 class="page-title"> My Hobbies</h2>
+        
+        <div class="hobby-card">
+            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:319,cw:1281,ch:1281,q:80,w:1281/8ToUvuPXxcD5ANh3D9Sr8L.jpg" alt="Digital Drawing" class="hobby-pic">
+            <div class="hobby-info">
+                <h3>Digital Drawing</h3>
+                <p>Digital drawing is my primary outlet for creativity, allowing me to visualize my imagination. I've been drawing since elementary school, so when i started digital drawing it just felt natural and a fun way to release stress and express myself. </p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://www.messoanuovo.it/cdn/shop/articles/PC-gaming-scaled_7bafb9a7-1d61-4472-8b07-8a2d61362a6c.jpg?v=1768898270" alt="Video Games" class="hobby-pic">
+            <div class="hobby-info">
+                <h3>Video Games</h3>
+                <p>Beyond just entertainment, I also play video games as a way to de-stress. I am fascinated by the art direction and character animations that make virtual worlds feel alive. Playing a variety of genres helps me understand how mechanics and visuals work together to create an immersive experience.</p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://www.avanse.com/blogs/images/next-top-47.jpg" alt="Graphic Design" class="hobby-pic">
+            <div class="hobby-info">
+                <h3>Graphic Design</h3>
+                <p>I enjoy the challenge of balancing aesthetics with functionality to communicate ideas effectively. My work often involves playing with typography, color theory, and layout to create modern and clean designs. Whether it is for web or print, I strive to make every project look polished and professional.</p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="https://thrivabilitymatters.org/2024/wp-content/uploads/2023/10/view-bioengineering-advance-with-robotic-hands-1024x768.jpg" alt="New Tech" class="hobby-pic">
+            <div class="hobby-info">
+                <h3>Exploring New Technology</h3>
+                <p>I have always been curious about how the latest tech trends can be used to improve the creative process. From experimenting with new software tools to keeping up with hardware advancements, I stay updated to remain competitive in the industry. I love finding innovative ways to integrate these technologies into my personal and academic projects.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">&larr; Back to Profile</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Miguel Angelo Alcazar | NU Manila Multimedia Arts
+    </footer>
+</body>
+</html>
