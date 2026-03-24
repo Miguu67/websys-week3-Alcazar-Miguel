@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .nav-bar {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        padding: 15px 0;
+        backdrop-filter: blur(5px);
+    }
+    .nav-bar a {
+        color: #1e8ef7;
+        text-decoration: none;
+        margin-right: 5%;
+        font-weight: bold;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+
+    .main-container {
+        width: 85%;
+        max-width: 800px;
+        margin: 40px 0;
+        padding: 40px;
+        background-color: rgba(0, 71, 171, 0.2);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+    .page-title {
+        border-bottom: 2px solid #00d4ff;
+        display: inline-block;
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .contact-info h3 {
+        color: #1e8ef7;
+        margin-bottom: 20px;
+    }
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .info-item b {
+        color: #1e8ef7;
+        min-width: 80px;
+    }
+    .info-item p {
+        margin: 0;
+        color: #ffffff; 
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        padding: 12px;
+        color: white;
+        outline: none;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+        border-color: #00d4ff;
+    }
+    .submit-btn {
+        background: #00d4ff;
+        color: #000;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .submit-btn:hover {
+        background: #009dbd;
+        transform: scale(1.02);
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        color: #1e8ef7;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html">BACK TO HOME</a>
+    </div>
+
+    <div class="main-container">
+        <h2 class="page-title">Get In Touch</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <div class="info-item">
+                    <b>Email:</b>
+                    <p>alcazarms@students.national-u.edu.ph.com</p>
+                </div>
+                <div class="info-item">
+                    <b>Socials:</b>
+                    <p>Migu Angelo @ Facebook</p>
+                </div>
+                <div class="info-item">
+                    <b>Location:</b>
+                    <p>Manila, Philippines</p>
+                </div>
+                <div class="info-item">
+                    <b>School:</b>
+                    <p>National University Manila</p>
+                </div>
+            </div>
+
+            <div class="message-section">
+                <h3>Send a Message</h3>
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button class="submit-btn">Send Message</button>
+                    
+                    <p style="font-size: 0.75em; color: rgba(255, 255, 255, 0.5); margin-top: 10px; font-style: italic;">
+                       *Note: This contact form is for aesthetic purposes only and does not actually send messages.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">&larr; Return to Profile</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Miguel Angelo Alcazar | NU Manila Multimedia Arts
+    </footer>
+</body>
+</html>
