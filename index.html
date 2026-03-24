@@ -6,144 +6,173 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-image: url('background.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        min-height: 100vh;
-    }
- 
-    .myDiv {
-        background-color: rgba(0, 71, 171, 0.5);
-        text-align: right;
-        padding: 10px 20px;
-        align-self: stretch;
-        margin-bottom: 20px;
-    }
- 
-    .myDiv a {
         color: white;
-        text-decoration: none;
-    }
- 
-    .profile-section {
-        display: flex;      
-        align-items: center;
-        gap: 15px;          
-        margin: 20px 0 20px 15%;
-    }
- 
-    .pic-box {
-        background-color: rgba(0, 71, 171, 0.5);
-        padding: 8px;                
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
- 
-    .pic-box img {
-        width: 120px;        
-        height: 120px;      
-        object-fit: cover;  
-        display: block;
-    }
- 
-    .name-box {
-        background-color: rgba(0, 71, 171, 0.5);
-        color: white;
-        padding: 25px 40px;
-        font-weight: bold;
-        font-size: 1.5em;
-    }
- 
-    .aboutme {
-        background-color: rgba(0, 71, 171, 0.5);
-        color: white;
-        width: 60%;
-        margin-left: 15%;
-        margin-bottom: 25px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
-    .hobbies, .favweb {
-        background-color: rgba(0, 71, 171, 0.5);
-        color: white;
-        width: 70%;
-        margin: 0 auto 15px auto;
-        padding: 20px;
-        box-sizing: border-box;
-    }
- 
-    .flex-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .nav-bar {
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        padding: 15px 0;
+        backdrop-filter: blur(5px);
     }
- 
-    .flex-container a {
-        color: white;
+    .nav-bar a {
+        color: #1e8ef7;
         text-decoration: none;
+        margin-right: 5%;
+        font-weight: bold;
         font-size: 0.9em;
     }
- 
-    h2 {
-        margin: 0;
+    .main-container {
+        width: 85%;
+        max-width: 1000px;
+        margin: 40px 0;
+        padding: 40px;
+        background-color: rgba(0, 71, 171, 0.3);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
- 
+    .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+    .pic-box img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+    }
+    .name-box h1 {
+        margin: 0;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .section {
+        margin-bottom: 50px;
+    }
+    .section h2 {
+        border-bottom: 2px solid #00d4ff;
+        display: inline-block;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+    .about-text {
+        line-height: 1.8;
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .image-grid img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .image-grid img:hover {
+        transform: translateY(-5px);
+        border-color: #00d4ff;
+        box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+    }
+
+    .link-container {
+        text-align: right;
+    }
+
+    .link-container a {
+        color: #1e8ef7;
+        text-decoration: none;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+
+    .link-container a:hover {
+        text-decoration: underline;
+    }
+
     footer {
         background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        text-align: center;
-        padding: 15px 0;
-        font-size: 0.8em;
+        padding: 20px;
         width: 100%;
+        text-align: center;
+        font-size: 0.8em;
         margin-top: auto;
     }
-    </style>  
+    </style>
 </head>
- 
+
 <body>
-    <div class="myDiv">
-        <a href="contact.html">contact page link</a>
+    <div class="nav-bar">
+        <a href="contact.html">CONTACT PAGE</a>
     </div>
-   
-    <div class="profile-section">
-        <div class="pic-box">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmCLXCy8emwWpQHllfxdNBzz0JeHHow4LyQ&s" alt="Profile Picture">
+
+    <div class="main-container">
+        <div class="profile-header">
+            <div class="pic-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmCLXCy8emwWpQHllfxdNBzz0JeHHow4LyQ&s" alt="Profile Picture">
+            </div>
+            <div class="name-box">
+                <h1>Miguel Angelo Alcazar</h1>
+                <p style="color: #1e8ef7; margin: 5px 0;">INF242 | BSIT-MAA</p>
+            </div>
         </div>
-        <div class="name-box">
-            Miguel Angelo Alcazar INF242 BSIT-MAA
+
+        <div class="section">
+            <h2>About me</h2>
+            <div class="about-text">
+                Hello! My name is Miguel, but you can call me Miguu. I’m 20 years old and will be turning 21 this coming October. 
+                I’m currently a second-year BSIT student at National University Manila, specializing in Multimedia Animation. 
+                I chose this field because I’ve always been a creative person. I enjoy drawing, designing, and working on digital art.
+            </div>
         </div>
-    </div>
-       
-    <div class="aboutme">
-        <h2>About me</h2>
-        <p>Hello! my name is Miguel, but you can call me Miguu. I’m 20 years old and will be turning 21 this coming October. <br>
-            I’m currently a second-year BSIT student at National University Manila, specializing in Multimedia Animation. <br>
-            I chose this field because I’ve always been a creative person. I enjoy drawing, designing, and working on digital art.</p>
-    </div>
- 
-    <div class="hobbies">
-        <div class="flex-container">
-            <span>*preview*</span>
+
+        <div class="section">
             <h2>Hobbies</h2>
-            <img src=" https://www.windowscentral.com/digital-art-beginners">
-            <a href="hobbies.html">link to webpage</a>
+            <div class="image-grid">
+               <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:319,cw:1281,ch:1281,q:80,w:1281/8ToUvuPXxcD5ANh3D9Sr8L.jpg" alt="pic">
+                <img src="https://www.messoanuovo.it/cdn/shop/articles/PC-gaming-scaled_7bafb9a7-1d61-4472-8b07-8a2d61362a6c.jpg?v=1768898270" alt="pic">
+                <img src="https://www.avanse.com/blogs/images/next-top-47.jpg" alt="pic">
+                <img src="https://thrivabilitymatters.org/2024/wp-content/uploads/2023/10/view-bioengineering-advance-with-robotic-hands-1024x768.jpg" alt="pic">
+            </div>
+            <div class="link-container">
+                <a href="hobbies.html">View all hobbies &rarr;</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Favorite Websites</h2>
+            <div class="image-grid">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLD4FW-JUBsZ73mM7nwfK4CGeXw2XpYbhfMg&s" alt="Web 1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="Web 2">
+                <img src="https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2023/11/shopee-logo.png?resize=2000%2C1311&ssl=1" alt="Web 3">
+                <img src="https://download.logo.wine/logo/Pinterest/Pinterest-Logo.wine.png" alt="Web 4">
+            </div>
+            <div class="link-container">
+                <a href="FavWebsites.html">Explore links &rarr;</a>
+            </div>
         </div>
     </div>
- 
-    <div class="favweb">
-        <div class="flex-container">
-            <span>*preview*</span>
-            <h2>Fave websites</h2>
-            <a href="FavWebsites.html">link to webpage</a>
-        </div>
-    </div>
- 
+
     <footer>
         &copy; 2026 Miguel Angelo Alcazar | NU Manila Multimedia Arts
     </footer>
