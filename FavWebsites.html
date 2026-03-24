@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favorite Websites</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('background.png'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .nav-bar {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        padding: 15px 0;
+        backdrop-filter: blur(5px);
+    }
+    .nav-bar a {
+        color: #1e8ef7;
+        text-decoration: none;
+        margin-right: 5%;
+        font-weight: bold;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+    }
+    .main-container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 40px 0;
+        padding: 40px;
+        background-color: rgba(0, 71, 171, 0.2);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .page-title {
+        border-bottom: 2px solid #00d4ff;
+        display: inline-block;
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+    .web-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
+    .web-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: white;
+    }
+
+    .web-card:hover {
+        transform: translateY(-10px);
+        background: rgba(0, 212, 255, 0.1);
+        border-color: #00d4ff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .web-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        object-fit: contain;
+    }
+    .web-card h3 {
+        margin: 10px 0;
+        color: #1e8ef7;
+    }
+    .web-card p {
+        font-size: 0.9em;
+        line-height: 1.4;
+        color: #ffffff; 
+    }
+    .back-btn {
+        display: inline-block;
+        margin-top: 40px;
+        color: #1e8ef7;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="index.html">BACK TO HOME</a>
+        <a href="hobbies.html">HOBBIES PAGE</a>
+    </div>
+
+    <div class="main-container">
+        <h2 class="page-title">Favorite Websites</h2>
+        
+        <div class="web-grid">
+            <a href="https://www.facebook.com" target="_blank" class="web-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLD4FW-JUBsZ73mM7nwfK4CGeXw2XpYbhfMg&s" alt="Facebook" class="web-icon">
+                <h3>Facebook</h3>
+                <p>I use this platform to stay updated with news and connected with my community. It is also a great tool for networking with fellow creatives. Following various multimedia pages also helps me stay informed about current trends in the Philippines.</p>
+            </a>
+
+            <a href="https://www.youtube.com" target="_blank" class="web-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="YouTube" class="web-icon">
+                <h3>YouTube</h3>
+                <p>YouTube is my primary source for entertainment. I also often watch tech reviews to stay updated on the latest hardware that can improve my digital art workflow. The platform serves as a constant source of creative inspiration from creators around the world.</p>
+            </a>
+
+            <a href="https://www.shopee.ph" target="_blank" class="web-card">
+                <img src="https://i0.wp.com/www.dafontfree.io/wp-content/uploads/2023/11/shopee-logo.png?resize=2000%2C1311&ssl=1" alt="Shopee" class="web-icon">
+                <h3>Shopee</h3>
+                <p>This is my go-to destination for finding affordable tech accessories and art supplies for my personal projects. I enjoy browsing through various gadget stores to find tools that enhance my workstation. The convenience of local shipping makes it easy to upgrade my setup whenever I need new equipment.</p>
+            </a>
+
+            <a href="https://www.pinterest.com" target="_blank" class="web-card">
+                <img src="https://download.logo.wine/logo/Pinterest/Pinterest-Logo.wine.png" alt="Pinterest" class="web-icon">
+                <h3>Pinterest</h3>
+                <p>I rely on Pinterest to build mood boards and gather visual references for my graphic design assignments. It is an essential tool for exploring unique color palettes and reference. Whenever I have a creative block, a quick scroll through my saved pins helps me find a fresh perspective.</p>
+            </a>
+        </div>
+
+        <a href="index.html" class="back-btn">&larr; Back to Profile</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Miguel Angelo Alcazar | NU Manila Multimedia Arts
+    </footer>
+</body>
+</html>
